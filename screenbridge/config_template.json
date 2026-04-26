@@ -1,0 +1,43 @@
+{
+  "$schema": "https://screenbridge.dev/schema/config.json",
+  "privacy_tier": "summarised",
+  "max_steps": 10,
+  "screenshot_format": "jpeg",
+  "retention_days": 7,
+  "rate_limit_actions_per_sec": 2,
+  "rate_limit_actions_per_task": 50,
+  "confirmation_required": [
+    "delete_file",
+    "send_message",
+    "submit_form",
+    "close_window",
+    "execute_code"
+  ],
+  "debug": false,
+  "sentinel": {
+    "enabled": true,
+    "sensitivity_level": "balanced",
+    "financial_detection": true,
+    "healthcare_detection": true,
+    "auth_detection": true,
+    "pii_redaction": true
+  },
+  "llm": {
+    "provider": "claude",
+    "model": "claude-sonnet-4-5-20250929",
+    "api_key_env": "ANTHROPIC_API_KEY",
+    "timeout": 30,
+    "max_retries": 3
+  },
+  "storage": {
+    "screenshots_enabled": true,
+    "compression_quality": 85,
+    "max_storage_gb": 10,
+    "cleanup_on_low_space": true
+  },
+  "element_tree": {
+    "max_depth": null,
+    "include_invisible": false,
+    "cache_duration_ms": 500
+  }
+}

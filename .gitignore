@@ -1,0 +1,109 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ScreenBridge Specific
+# Local storage - screenshots and session data MUST stay local
+.screenbridge/
+sessions/
+frames/
+*.png
+*.jpg
+*.jpeg
+session.log
+task.json
+*.diff.json
+
+# Configuration with sensitive data
+config.toml
+.env
+.env.local
+*.key
+credentials.json
+
+# API Keys and Secrets
+*api_key*
+*secret*
+.anthropic/
+.openai/
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Logs
+*.log
+logs/
+
+# Model weights (if downloaded locally)
+*.onnx
+*.pt
+*.pth
+models/weights/
+
+# Documentation build
+docs/_build/
+site/
+
+# OS specific
+Thumbs.db
+.Spotlight-V100
+.Trashes
+
+# Package manager
+pip-log.txt
+pip-delete-this-directory.txt
+poetry.lock
+uv.lock
+
+# Jupyter
+.ipynb_checkpoints
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary files
+tmp/
+temp/
+*.tmp
