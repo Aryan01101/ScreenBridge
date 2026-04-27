@@ -42,8 +42,8 @@ dependencies = [
     "pyobjc-framework-Cocoa>=10.0; sys_platform == 'darwin'",
     "pyobjc-framework-Quartz>=10.0; sys_platform == 'darwin'",
 
-    # Action execution
-    "pyautogui>=0.9.54",
+    # Action execution (constrained by atomacos dependency)
+    "pyautogui>=0.9.40,<0.9.42",
 
     # LLM Connectors
     "anthropic>=0.39.0",

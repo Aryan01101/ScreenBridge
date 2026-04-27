@@ -110,14 +110,10 @@ class CaptureManager:
 
         # Save metadata alongside screenshot
         metadata_path = self.frames_path / f"{frame_number:04d}.json"
-        async with asyncio.get_event_loop().run_in_executor(
+        await loop.run_in_executor(
             None,
-            lambda: open(metadata_path, 'w')
-        ) as f:
-            await loop.run_in_executor(
-                None,
-                lambda: json.dump(metadata, open(metadata_path, 'w'), indent=2)
-            )
+            lambda: json.dump(metadata, open(metadata_path, 'w'), indent=2)
+        )
 
         return metadata
 
